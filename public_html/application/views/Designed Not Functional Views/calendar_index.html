@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <title>Calendar</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href=""> HOME </a></li>
+                    <li><a href=""> CALENDAR </a></li>
+                    <li><a href=""> MANAGE COURSES </a></li>
+                    <li><a href=""> MANAGE PROFESSORS </a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <h1>Select a course</h1>
+
+            <div class="course_container">
+                <div class="course_name" id="cs250" style="background-color: #f7f779;">CS 250</div>
+                <div class="course_name" id="cs225" style="background-color: #f68080;">CS 225</div>
+                <div class="course_name" id="cs157" style="background-color: #faae7b;">CS 157</div>
+                <div class="course_name" id="cs158" style="background-color: #2a9d8f;">CS 158</div>
+                <div class="course_name" id="cs350" style="background-color: #a8dadc;">CS 350</div>
+                <div class="course_name" id="cs325" style="background-color: #8f766f;">CS 325</div>
+                <div class="course_name" id="cs490" style="background-color: #24ad6d;">CS 490</div>
+                <div class="course_name" id="deselect">Deselect All</div>
+            </div>
+
+            <h3>Add a course to the schedule</h3>
+
+            <div class="schedule_container">
+                <div class="days_container">
+                    <span class="corner"></span>
+                    <div class="day"> Monday </div>
+                    <div class="day"> Wednesday</div>
+                    <div class="day"> Friday </div>
+                    <div class="day"> </div>
+                    <div class="day"> </div>
+                    <div class="day"> Tuesday </div>
+                    <div class="day"> Thursday </div>
+                </div>
+
+                <div class="part_day">
+                    <span class="time">8am - 8:50am</span>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                    </div>
+                    <div class="part_day">
+                        <span class="time">8:15am - 9:30am</span>
+                        <div class="course"></div>
+                    </div>
+                    <div class="course"></div>
+                </div>
+                <div class="part_day">
+                    <span class="time">9am - 9:50am</span>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                    </div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                        <div class="course"></div>
+                    </div>
+                    <div class="course"></div>
+                </div>
+                <div class="part_day">
+                    <span class="time">10am - 10:20</span>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                    </div>
+                    <div class="part_day">
+                        <span class="time">9:45am - 10:05am</span>
+                        <div class="course" style="color:black; margin-right: 0px;">CHA</div>
+                    </div>
+                    <div class="course" style="color: black; margin-left: 0px; width:154px; text-align: left;">PEL</div>
+                </div>
+                <div class="part_day">
+                    <span class="time">10:30am - 11:20am</span>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                    </div>
+                    <div class="part_day">
+                        <span class="time">10:20am - 11:35am</span>
+                        <div class="course"></div>
+                    </div>
+                    <div class="course"></div>
+                </div>
+                <div class="part_day">
+                    <span class="time"> 11:30am - 12:20pm</span>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                    </div>
+                    <div class="part_day">
+                        <span class="time">11:55am - 1:10pm</span>
+                        <div class="course"></div>
+                    </div>
+                    <div class="course"></div>
+                </div>
+                <div class="part_day">
+                    <span class="time"> 12:30pm - 1:20pm</span>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                    </div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                        <div class="course"></div>
+                    </div>
+                    <div class="course"></div>
+
+                </div>
+                <div class="part_day">
+                    <span class="time"> 1:30pm - 2:20pm</span>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="course"></div>
+                    <div class="part_day">
+                        <span class="time"></span>
+                    </div>
+                    <div class="part_day">
+                        <span class="time">9am - 9:50am</span>
+                        <div class="course"></div>
+                    </div>
+                    <div class="course"></div>
+                </div>
+            </div>
+            <button class="deleteBtn">Reset Schedule</button>
+
+            <div class="pop-up__container">
+                <div class="pop-up">
+                    <h6>Are you sure you want to delete all the courses from your schedule?</h6>
+                    <div class="btn__container">
+                        <div class="btn__answer" id="btn__yes">YES</div>
+                        <div class="btn__answer" id="btn__no">NO</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <script src="calendar_main.js"></script>
+</body>
+
+</html>

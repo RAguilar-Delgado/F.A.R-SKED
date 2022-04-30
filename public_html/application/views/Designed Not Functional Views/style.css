@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 200px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #faed39;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #2e2601;
+    background: #2e2601;
+    transition: 1s;
+}
+
+
+/* CALENDAR */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+/*  Task Container */
+
+.course_container {
+    display: flex;
+    margin-bottom: 3rem;
+    padding: 10px;
+}
+
+.course_container .course_name {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deselect {
+    background-color: #1d3557;
+    color: white;
+}
+
+
+/* Schedule Container */
+
+.schedule_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+}
+
+.days_container {
+    display: flex;
+}
+
+.corner {
+    width: 150px;
+    height: 40px;
+    margin: 2px;
+}
+
+.day {
+    width: 150px;
+    border: solid 1px black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.part_day {
+    display: flex;
+}
+
+.time {
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.course {
+    background-color: white;
+    height: 40px;
+    width: 150px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+/* Reset Button */
+
+.deleteBtn {
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.deleteBtn:hover {
+    background-color: #eee;
+}
+
+
+/* Pop up */
+
+.pop-up__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3735E;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn__answer {
+    margin: 0 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: black;
+}
+
+
+/* Login/Signup */
+
+.login_container {
+    position: absolute;
+    width: 450px;
+    max-width: 450px;
+    margin: 1rem;
+    left: 35%;
+    top: 15%;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background-color: white;
+}
+
+.login_container .form_input .form_button {
+    font: 500 1rem;
+}
+
+.form--hidden {
+    display: none;
+}
+
+.form>*:first-child {
+    margin-top: 0;
+}
+
+.form>*:last-child {
+    margin-bottom: 0;
+}
+
+.form_title {
+    text-align: center;
+}
+
+.form_title .form_message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form_message-success {
+    color: var(--color-success);
+}
+
+.form_message-error {
+    color: var(--color-error);
+}
+
+.form_input-group {
+    margin-bottom: 1rem;
+}
+
+.form_input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form_input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+
+.form_input-error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form_input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form_button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.form_button:hover {
+    background: var(--color-primary-dark);
+}
+
+.form_button:active {
+    transform: scale(0.98);
+}
+
+.form_text {
+    text-align: center;
+}
+
+.form_link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form_link:hover {
+    text-decoration: underline;
+}
+
+
+/*  Profile Style */
+
+.sidebar {
+    background-color: #2e2601;
+    color: black;
+    height: 55.5%;
+}
+
+.sidebar a {
+    margin-left: 10px;
+    display: block;
+    color: black;
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.card h1,
+h3 {
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.content {
+    background-color: whitesmoke;
+}
+
+.container-fluid_profile {
+    color: black;
+}
+
+
+/* Course Builder */
+
+.container-fluid_form {
+    color: black;
+}
+
+.container-fluid_form h2,
+p {
+    color: white;
+}
+
+.container-fluid_form h6 {
+    color: black;
+    text-align: center
+}
+
+.container-fluid_form h5 {
+    color: black;
+    margin-left: 10px;
+}
+
+#builder {
+    background-color: #dbe5e6;
+    padding: 30px 0px;
+}
+
+#builder h2 {
+    font-weight: 900;
+    font-size: 34px;
+    padding-bottom: 5px;
+}
+
+.title {
+    padding: 25px 0px;
+}
+
+.title p {
+    font-size: 18px;
+}
+
+.card {
+    margin: 20px 10px;
+}
+
+.card-body_form a {
+    color: #0c7f90;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: auto;
+    font-weight: 600;
+}
+
+.form_button {
+    text-align: center;
+}
+
+
+/* Time Block*/
+
+.container-fluid {
+    color: white;
+    text-align: center;
+}
+
+.container-fluid h6,
+p {
+    color: black;
+    text-align: left;
+}
+
+.button_block {
+    width: 125%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
